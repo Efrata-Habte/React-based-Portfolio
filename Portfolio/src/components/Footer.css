@@ -1,0 +1,13 @@
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #111827;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  border-top: 1px solid #1f2937;
+}
+
+.footer p {
+  margin: 0;
+}
