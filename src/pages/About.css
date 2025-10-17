@@ -1,0 +1,105 @@
+.about-page {
+  min-height: 80vh;
+  padding: 5rem 10%;
+  display: flex;
+  justify-content: center;
+  background-color: #0a0f1c;
+  color: #e5e7eb;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  perspective: 1200px; /* enables 3D effects */
+}
+
+/* ===== PROFILE PICTURE ===== */
+.profile-pic-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #2563eb;
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+  object-fit: cover;
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* 3D hover effect */
+.profile-pic-container:hover .profile-pic {
+  transform: rotateY(15deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.6);
+}
+
+/* ===== ABOUT TEXT ===== */
+.about-text {
+  flex: 2 1 450px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ===== SKILLS BOX ===== */
+.skills-box {
+  margin-top: 2rem;
+  background: rgba(37, 99, 235, 0.05);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+}
+
+.skills-box h3 {
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+.skills-box ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.skills-box li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}

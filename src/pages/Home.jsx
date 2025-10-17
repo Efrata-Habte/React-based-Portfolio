@@ -6,7 +6,6 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <Header />
 
       <section className="hero">
         <div className="hero-content">
@@ -21,7 +20,6 @@ const Home = () => {
         <div className="floating-shape2"></div>
       </section>
 
-      <Footer />
     </div>
   );
 };
