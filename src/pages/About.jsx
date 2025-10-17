@@ -29,8 +29,7 @@ const About = () => {
             <h3>Skills</h3>
             <ul>
               <li>React.js / Vite</li>
-              <li>CSS / Tailwind</li>
-              <li>3D Effects / Depth Design</li>
+              <li>CSS</li>
               <li>Responsive UI Design</li>
             </ul>
           </div>
